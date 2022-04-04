@@ -30,7 +30,7 @@ export const convertToBarTasks = (
   let barTasks = tasks.map((t, i) => {
     return convertToBarTask(
       t,
-      i,
+      t?.index ? t.index : i,
       dates,
       dateDelta,
       columnWidth,

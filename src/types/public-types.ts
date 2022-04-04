@@ -10,6 +10,7 @@ export enum ViewMode {
 export type TaskType = "task" | "milestone" | "project";
 export interface Task {
   id: string;
+  index?: number;
   type: TaskType;
   name: string;
   start: Date;
