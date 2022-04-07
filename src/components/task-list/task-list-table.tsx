@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import styles from "./task-list-table.module.css";
 import { Task } from "../../types/public-types";
 
