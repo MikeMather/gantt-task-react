@@ -20,6 +20,7 @@ const dateTimeOptions: Intl.DateTimeFormatOptions = {
   month: "long",
   day: "numeric",
 };
+console.log(dateTimeOptions);
 
 export const TaskListTableDefault: React.FC<{
   rowHeight: number;
