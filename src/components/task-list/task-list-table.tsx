@@ -21,7 +21,7 @@ export const TaskListTableDefault: React.FC<{
   locale,
   onExpanderClick,
 }) => {
-
+  console.log(locale);
   return (
     <div
       className={styles.taskListWrapper}
