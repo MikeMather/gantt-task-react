@@ -18,10 +18,8 @@ export const TaskListTableDefault: React.FC<{
   tasks,
   fontFamily,
   fontSize,
-  locale,
   onExpanderClick,
 }) => {
-  console.log(locale);
   return (
     <div
       className={styles.taskListWrapper}
@@ -63,7 +61,7 @@ export const TaskListTableDefault: React.FC<{
                 >
                   {expanderSymbol}
                 </div>
-                <div>{t.name}</div>
+                <div>{t.headerLink ? <a href={t.headerLink}>{t.name}</a> : t.name}</div>
               </div>
             </div>
           </div>
