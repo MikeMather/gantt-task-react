@@ -1,3 +1,4 @@
+import React from "react";
 import { Task } from "../../dist/types/public-types";
 
 export function initTasks() {
@@ -12,6 +13,7 @@ export function initTasks() {
       type: "project",
       hideChildren: false,
       displayOrder: 1,
+      CustomRowHeader: () => <a href="/">Test</a>,
     },
     {
       start: new Date(currentDate.getFullYear(), currentDate.getMonth(), 1),

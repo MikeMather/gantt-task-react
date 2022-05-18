@@ -1,3 +1,5 @@
+import React from "react";
+
 export enum ViewMode {
   Hour = "Hour",
   QuarterDay = "Quarter Day",
@@ -30,7 +32,7 @@ export interface Task {
   dependencies?: string[];
   hideChildren?: boolean;
   displayOrder?: number;
-  headerLink?: string;
+  CustomRowHeader?: React.FC;
 }
 
 export interface EventOption {

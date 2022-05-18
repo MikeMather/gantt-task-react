@@ -61,7 +61,7 @@ export const TaskListTableDefault: React.FC<{
                 >
                   {expanderSymbol}
                 </div>
-                <div>{t.headerLink ? <a href={t.headerLink}>{t.name}</a> : t.name}</div>
+                <div>{t.CustomRowHeader ? <t.CustomRowHeader /> : t.name}</div>
               </div>
             </div>
           </div>
